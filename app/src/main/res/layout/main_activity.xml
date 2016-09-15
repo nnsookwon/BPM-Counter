@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.nnsookwon.bpm_counter.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/screen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/main_activity_et_bpm"
+            android:background="@android:color/transparent"
+            android:onClick="decrement"
+            android:src="@drawable/minus" />
+
+        <EditText
+            android:id="@id/main_activity_et_bpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="(BPM)"
+            android:textSize="32sp"
+            android:inputType="numberDecimal"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/main_activity_et_bpm"
+            android:background="@android:color/transparent"
+            android:onClick="increment"
+            android:src="@drawable/plus" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tap_to_beat"
+        android:textSize="48sp"
+        android:gravity="center"
+        android:layout_weight="0.75"
+        android:onClick="tapToBeat">
+
+
+    </Button>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/analyze"
+            android:textSize="16sp"
+            android:onClick="analyze"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:textSize="16sp"
+            android:onClick="reset"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/choose_song"
+        android:id="@+id/menu_choose_song">
+
+    </item>
+
+</menu>

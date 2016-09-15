@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BPM Counter</string>
+    <string name="tap_to_beat">TAP\nTO THE\nBEAT!</string>
+    <string name="analyze">Analyze</string>
+    <string name="reset">Reset</string>
+    <string name="choose_song">Choose Song</string>
+</resources>
